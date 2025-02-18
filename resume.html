@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damon (Jinyu) Wang - Portfolio</title>
+    <!--
+    SoA: I, Jinyu (Damon) Wang, 400402593, certify that this material is my original work.
+    No other person's work has been used without due acknowledgment.
+    I have also not made my work available to anyone else.
+    -->
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 40px;
+        }
+        h1, h2 {
+            font-family: "Times New Roman", serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img { width: 200px; height: auto; border-radius: 10px; }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Dynamic Greeting -->
+    <h2 id="greeting"></h2>
+
+    <div class="header">
+        <img src="/Users/damonw/Desktop/lab 1/Image.jpeg" alt="My Picture">
+        <h1>&nbsp;&nbsp;&nbsp;&nbsp;Damon (Jinyu) Wang</h1>
+    </div>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p>Hello! My name is Damon (Jinyu) Wang, and I am an aspiring automation engineer with a strong background in electrical engineering, industrial automation, and software development. My passion lies in integrating artificial intelligence with automation systems to create smart, efficient, and scalable solutions. I have experience working with PLCs, CAD design, and IoT-based smart systems.</p>
+        <p>Currently, I am completing my Bachelor of Technology degree in Automation Technology Engineering at McMaster University, building on my multidisciplinary expertise in chemical, mechanical, electrical, and software engineering.</p>
+    </section>
+
+    <section class="section">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>High School:</strong> Glendale Secondary School</li>
+            <li><strong>College:</strong> Mohawk College</li>
+            <li><strong>University and Specialization:</strong> McMaster University, Automation Technology Engineering</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Work Experience</h2>
+        
+        <h3>Paid Jobs</h3>
+        <p><strong><em>Ticket Seller</em></strong> - <a href="https://www.cineplex.com/">Cineplex</a></p>
+        <ul>
+            <li>Welcome and serve guests</li>
+            <li>Provide a clean and safe entertainment environment</li>
+            <li>Check tickets</li>
+        </ul>
+
+        <p><strong><em>PLC Designer</em></strong> - <a href="https://www.gmdi.cn/en/">Guangzhou Metro</a></p>
+        <ul>
+            <li>Design control systems that automate manufacturing processes</li>
+            <li>Troubleshoot machines</li>
+            <li>Organize important data</li>
+        </ul>
+
+        <h3>Co-op Experience</h3>
+        <p><strong><em>CAD Designer</em></strong> - <a href="https://www.gmdi.cn/en/">Guangzhou Metro</a></p>
+        <ul>
+            <li>Develop detailed 2D and 3D CAD models</li>
+            <li>Create technical drawings</li>
+            <li>Coordinate with project teams to incorporate design changes and updates</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Portfolio</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+            <li><strong>Smart Garbage Can System</strong> - IoT-based waste management solution integrating sensors and automation. </li>
+            <li><strong>PLC-Controlled Manufacturing Line</strong> - Designed automation systems to optimize production lines. </li>
+            <li><strong>3D CAD Models for Industrial Use</strong> - Developed detailed component designs for automation equipment. </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming: Python, C++, MATLAB</li>
+            <li>Automation: PLC Design, SCADA Systems</li>
+            <li>Engineering Software: AutoCAD, SolidWorks, Quartus 2</li>
+            <li>IoT and AI Integration</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li><strong>Languages:</strong> French | I love its smooth, melodic sound and association with poetry and chivalry.</li>
+            <li><strong>Sport:</strong> Fencing | Promotes discipline, sportsmanship, and physical wellness.</li>
+            <li><strong>Professional Association:</strong> McMaster Fencing Association</li>
+            <li><strong>Club:</strong> Travel Club | Provides opportunities to explore new cultures and broaden perspectives.</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="https://outlook.office.com/mail/">wangj672@mcmaster.ca</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/feed/">damon15ls</a></p>
+        <p>GitHub: <a href="https://github.com">github.com/damonwang</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Jinyu Wang | All Rights Reserved
+    </footer>
+
+    <!-- JavaScript for Dynamic Greeting -->
+    <script>
+        function updateGreeting() {
+            let hour = new Date().getHours();
+            let greetingMessage = "";
+
+            if (hour < 12) {
+                greetingMessage = "Good morning!";
+            } else if (hour < 18) {
+                greetingMessage = "Good afternoon! ";
+            } else {
+                greetingMessage = "Good evening! ";
+            }
+
+            document.getElementById("greeting").innerText = greetingMessage;
+        }
+
+        // Run greeting function on page load
+        updateGreeting();
+    </script>
+</body>
+</html>
